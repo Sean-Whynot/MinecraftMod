@@ -1,13 +1,12 @@
 package com.sean.firstmod.item;
 
 import com.sean.firstmod.FirstMod;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import javax.swing.*;
 
 public class ModItems {
 
@@ -21,7 +20,7 @@ public class ModItems {
 
    // Adding baja blast
    public static final RegistryObject<Item> BAJABLAST = ITEMS.register("bajablast",
-           () -> new Item(new Item.Properties()));
+           () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(0.3F).build())));
 
     // Base
     public static void register(IEventBus eventBus) {
