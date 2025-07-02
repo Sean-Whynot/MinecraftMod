@@ -19,6 +19,9 @@ public class ModItems {
     public static final RegistryObject<Item> COIN = ITEMS.register("coin",
             () -> new Item(new Item.Properties()));
 
+   // Adding baja blast
+   public static final RegistryObject<Item> BAJABLAST = ITEMS.register("bajablast",
+           () -> new Item(new Item.Properties()));
 
     // Base
     public static void register(IEventBus eventBus) {

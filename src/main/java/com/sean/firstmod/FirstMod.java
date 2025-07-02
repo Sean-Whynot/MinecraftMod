@@ -55,7 +55,10 @@ public class FirstMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COIN);
+            event.accept(ModItems.BAJABLAST);
         }
+
+
 
     }
 
