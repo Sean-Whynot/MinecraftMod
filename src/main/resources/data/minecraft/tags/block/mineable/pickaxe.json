@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "firstmod:coin_block",
+    "firstmod:cage_block"
+  ]
+}
