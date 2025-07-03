@@ -1,6 +1,7 @@
 package com.sean.firstmod;
 
 import com.mojang.logging.LogUtils;
+import com.sean.firstmod.block.ModBlocks;
 import com.sean.firstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -35,6 +36,7 @@ public class FirstMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
 
@@ -58,7 +60,10 @@ public class FirstMod
             event.accept(ModItems.BAJABLAST);
         }
 
-
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.COIN_BLOCK);
+            event.accept(ModBlocks.CAGE_BLOCK);
+        }
 
     }
 
