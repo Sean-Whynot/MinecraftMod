@@ -20,6 +20,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.COIN.get());
                         output.accept(ModItems.BAJABLAST.get());
+
+                        output.accept(ModItems.CHISEL_ITEM.get());
                     }).build());
 
 

@@ -62,6 +62,8 @@ public class FirstMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COIN);
             event.accept(ModItems.BAJABLAST);
+
+            event.accept(ModItems.CHISEL_ITEM);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

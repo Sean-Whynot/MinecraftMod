@@ -1,6 +1,7 @@
 package com.sean.firstmod.item;
 
 import com.sean.firstmod.FirstMod;
+import com.sean.firstmod.item.custom.ChiselItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +22,11 @@ public class ModItems {
    // Adding baja blast
    public static final RegistryObject<Item> BAJABLAST = ITEMS.register("bajablast",
            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(0.3F).build())));
+
+   public static final RegistryObject<Item> CHISEL_ITEM = ITEMS.register("chisel",
+           () -> new ChiselItem(new Item.Properties().durability(32)));
+
+
 
     // Base
     public static void register(IEventBus eventBus) {
